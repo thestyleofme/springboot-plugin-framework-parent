@@ -32,4 +32,5 @@ hs_err_pid*
 /examples/basic-example/basic-example-main/target/
 /examples/basic-example/plugins/basic-example-plugin1/target/
 /examples/basic-example/plugins/basic-example-plugin2/target/
+/examples/basic-example/demo-dist/
 /springboot-plugin-framework/target/
