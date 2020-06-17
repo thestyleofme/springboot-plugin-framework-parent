@@ -3,5 +3,5 @@ server:
 
 plugin:
   runMode: dev
-  pluginPath: ./example/basic-example/plugins
+  pluginPath: ./examples/basic-example/plugins
   pluginConfigFilePath:

@@ -26,7 +26,7 @@ public class PluginInitializerListenerFactory implements PluginInitializerListen
     public PluginInitializerListenerFactory(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
         // 添加默认的初始化监听者
-        pluginInitializerListeners.add(new com.github.codingdebugallday.integration.listener.DefaultInitializerListener(applicationContext));
+        pluginInitializerListeners.add(new DefaultInitializerListener(applicationContext));
     }
 
     @Override
@@ -54,7 +54,7 @@ public class PluginInitializerListenerFactory implements PluginInitializerListen
     @Override
     public void failure(Throwable throwable) {
         try {
-            for (com.github.codingdebugallday.integration.listener.PluginInitializerListener pluginInitializerListener : pluginInitializerListeners) {
+            for (PluginInitializerListener pluginInitializerListener : pluginInitializerListeners) {
                 pluginInitializerListener.failure(throwable);
             }
         } catch (Exception e) {
@@ -67,7 +67,7 @@ public class PluginInitializerListenerFactory implements PluginInitializerListen
      *
      * @param pluginInitializerListener pluginInitializerListener
      */
-    public void addPluginInitializerListeners(com.github.codingdebugallday.integration.listener.PluginInitializerListener pluginInitializerListener) {
+    public void addPluginInitializerListeners(PluginInitializerListener pluginInitializerListener) {
         if (pluginInitializerListener != null) {
             pluginInitializerListeners.add(pluginInitializerListener);
         }

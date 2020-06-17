@@ -50,7 +50,7 @@ public abstract class BasePlugin extends Plugin {
         } catch (Exception e) {
             log.error("stop error", e);
         } finally {
-            basePluginExtend.startEvent();
+            basePluginExtend.stopEvent();
         }
     }
 
