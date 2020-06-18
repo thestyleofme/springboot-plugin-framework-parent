@@ -12,6 +12,7 @@
     <modules>
         <module>springboot-plugin-framework</module>
         <module>examples</module>
+        <module>springboot-plugin-framework-extension</module>
     </modules>
 
     <description>spring boot 插件开发集成包</description>
