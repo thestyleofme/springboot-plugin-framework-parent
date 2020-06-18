@@ -39,7 +39,7 @@ public class Swagger2Config {
                 .description("基本插件案例模块接口描述")
                 .termsOfServiceUrl("http://127.0.0.1")
                 .contact(new Contact("阿骚", "", ""))
-                .version("0.0.1")
+                .version("1.0.0")
                 .build();
     }
 

@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.codingdebugallday</groupId>
         <artifactId>basic-example</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.0.RELEASE</version>
     </parent>
 
     <artifactId>basic-example-main</artifactId>
@@ -19,18 +19,13 @@
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <quartz.version>2.3.2</quartz.version>
         <swagger-bootstrap-ui.version>1.9.6</swagger-bootstrap-ui.version>
-        <springboot-plugin-framework.version>0.0.1-SNAPSHOT</springboot-plugin-framework.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.github.codingdebugallday</groupId>
             <artifactId>springboot-plugin-framework</artifactId>
-            <version>${springboot-plugin-framework.version}</version>
-            <!-- 开发时可注释下面的，需提前自行install springboot-plugin-framework模块-->
-            <!-- 打包时使用system的方式 这个jar依赖后续会上传到maven中央仓库-->
-            <!--            <scope>system</scope>-->
-            <!--            <systemPath>${project.basedir}/../../../springboot-plugin-framework/target/springboot-plugin-framework-0.0.1-SNAPSHOT.jar</systemPath>-->
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
@@ -101,5 +96,30 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>ossrh snapshots</id>
+            <name>ossrh snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>ossrh staging</id>
+            <name>ossrh staging</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </repositories>
 
 </project>
