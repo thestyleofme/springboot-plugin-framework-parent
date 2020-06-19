@@ -3,19 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>integration-mybatis-plugin1</module>
+        <module>integration-mybatis-plugin2</module>
+    </modules>
     <parent>
+        <artifactId>integration-mybatis</artifactId>
         <groupId>com.github.codingdebugallday</groupId>
-        <artifactId>basic-example</artifactId>
         <version>1.0.0.RELEASE</version>
     </parent>
 
-    <artifactId>basic-example-plugin-parent</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>basic-example-plugin1</module>
-        <module>basic-example-plugin2</module>
-    </modules>
+    <artifactId>integration-mybatis-plugin-parent</artifactId>
 
     <properties>
         <!-- 子类覆盖该配置 -->
@@ -36,7 +35,7 @@
 
         <dependency>
             <groupId>com.github.codingdebugallday</groupId>
-            <artifactId>basic-example-main</artifactId>
+            <artifactId>integration-mybatis-main</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -45,6 +44,7 @@
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

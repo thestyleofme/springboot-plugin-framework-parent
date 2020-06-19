@@ -4,18 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
+        <artifactId>integration-mybatis-plugin-parent</artifactId>
         <groupId>com.github.codingdebugallday</groupId>
-        <artifactId>springboot-plugin-framework-parent</artifactId>
         <version>1.0.0.RELEASE</version>
     </parent>
 
-    <artifactId>springboot-plugin-framework-example</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>integration-mybatis-plugin2</artifactId>
 
-    <modules>
-        <module>basic-example</module>
-        <module>integration-mybatis</module>
-    </modules>
+    <properties>
+        <plugin.id>integration-mybatis-plugin2</plugin.id>
+        <plugin.class>com.mybatis.plugin2.ExamplePlugin2</plugin.class>
+        <plugin.version>${project.version}</plugin.version>
+        <plugin.provider>isaac</plugin.provider>
+    </properties>
 
 
 </project>
