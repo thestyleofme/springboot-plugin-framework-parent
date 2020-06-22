@@ -15,6 +15,7 @@
     <modules>
         <module>basic-example</module>
         <module>integration-mybatis</module>
+        <module>integration-mybatisplus</module>
     </modules>
 
 

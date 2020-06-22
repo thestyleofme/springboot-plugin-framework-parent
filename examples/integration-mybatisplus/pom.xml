@@ -8,14 +8,15 @@
         <groupId>com.github.codingdebugallday</groupId>
         <version>1.0.0.RELEASE</version>
     </parent>
+
+    <description>集成mybatis-plus案例</description>
+    <artifactId>integration-mybatisplus</artifactId>
     <packaging>pom</packaging>
 
-    <artifactId>integration-mybatis</artifactId>
-
     <modules>
-        <module>integration-mybatis-main</module>
-        <module>integration-mybatis-runner</module>
-        <module>plugins</module>
+        <module>integration-mybatisplus-main</module>
+        <module>plugins/integration-mybatisplus-plugin</module>
     </modules>
+
 
 </project>
