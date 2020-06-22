@@ -6,7 +6,7 @@
 
     <groupId>com.github.codingdebugallday</groupId>
     <artifactId>springboot-plugin-framework</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <version>1.0.1.RELEASE</version>
 
     <name>springboot-plugin-framework</name>
     <description>spring boot 插件式开发集成包</description>

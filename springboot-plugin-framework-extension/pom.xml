@@ -6,7 +6,7 @@
 
     <groupId>com.github.codingdebugallday</groupId>
     <artifactId>springboot-plugin-framework-extension</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <version>1.0.1.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>springboot-plugin-framework-extension</name>

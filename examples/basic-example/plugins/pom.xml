@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.codingdebugallday</groupId>
         <artifactId>basic-example</artifactId>
-        <version>1.0.0.RELEASE</version>
+        <version>1.0.1.RELEASE</version>
     </parent>
 
     <artifactId>basic-example-plugin-parent</artifactId>
