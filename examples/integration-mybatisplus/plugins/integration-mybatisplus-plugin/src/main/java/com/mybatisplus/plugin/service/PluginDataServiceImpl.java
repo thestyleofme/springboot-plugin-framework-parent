@@ -12,10 +12,12 @@ import com.mybatisplus.plugin.mapper.PluginDataMapper;
 import org.springframework.stereotype.Component;
 
 /**
+ * <p>
  * description
+ * </p>
  *
- * @author zhangzhuo
- * @version 1.0
+ * @author isaac 2020/7/1 17:05
+ * @since 1.0
  */
 @Component
 public class PluginDataServiceImpl extends WrapperServiceImpl<PluginDataMapper, PluginData>

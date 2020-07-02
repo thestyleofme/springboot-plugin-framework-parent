@@ -8,10 +8,12 @@ import com.github.codingdebugallday.realize.OneselfListener;
 import org.springframework.util.ClassUtils;
 
 /**
+ * <p>
  * 插件自己的监听器分组
+ * </p>
  *
- * @author zhangzhuo
- * @version 2.2.1
+ * @author isaac 2020/7/1 17:05
+ * @since 1.0
  */
 public class OneselfListenerGroup implements PluginClassGroup {
 

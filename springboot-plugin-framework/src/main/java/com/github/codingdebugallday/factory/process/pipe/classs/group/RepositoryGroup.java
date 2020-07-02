@@ -6,10 +6,12 @@ import com.github.codingdebugallday.utils.AnnotationsUtils;
 import org.springframework.stereotype.Repository;
 
 /**
+ * <p>
  * 分组存在注解: @Repository
+ * </p>
  *
- * @author zhangzhuo
- * @version 2.1.0
+ * @author isaac 2020/7/1 17:04
+ * @since 1.0
  */
 public class RepositoryGroup implements PluginClassGroup {
 

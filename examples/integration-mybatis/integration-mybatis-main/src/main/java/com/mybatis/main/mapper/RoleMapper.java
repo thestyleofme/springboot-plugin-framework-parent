@@ -9,10 +9,12 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
+ * <p>
  * description
+ * </p>
  *
- * @author zhangzhuo
- * @version 1.0
+ * @author isaac 2020/7/1 17:05
+ * @since 1.0
  */
 @Repository
 public interface RoleMapper {

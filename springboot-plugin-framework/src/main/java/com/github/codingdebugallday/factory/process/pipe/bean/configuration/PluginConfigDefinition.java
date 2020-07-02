@@ -3,10 +3,12 @@ package com.github.codingdebugallday.factory.process.pipe.bean.configuration;
 import java.util.Objects;
 
 /**
+ * <p>
  * 插件配置的参数定义
+ * </p>
  *
- * @author zhangzhuo
- * @version 1.0
+ * @author isaac 2020/7/1 17:05
+ * @since 1.0
  */
 public class PluginConfigDefinition {
 
