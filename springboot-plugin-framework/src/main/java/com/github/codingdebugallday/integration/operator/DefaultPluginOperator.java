@@ -85,7 +85,7 @@ public class DefaultPluginOperator implements PluginOperator {
     }
 
     @Override
-    public synchronized boolean initPlugins(PluginInitializerListener pluginInitializerListener) {
+    public synchronized void initPlugins(PluginInitializerListener pluginInitializerListener) {
         if (isInit) {
             throw new PluginException("Plugins Already initialized. Cannot be initialized again");
         }
@@ -105,7 +105,7 @@ public class DefaultPluginOperator implements PluginOperator {
             List<PluginWrapper> pluginWrappers = pluginManager.getStartedPlugins();
             if (pluginWrappers == null || pluginWrappers.isEmpty()) {
                 log.warn("Not found plugin!");
-                return false;
+                return;
             }
             boolean isFoundException = false;
             for (PluginWrapper pluginWrapper : pluginWrappers) {
@@ -118,11 +118,9 @@ public class DefaultPluginOperator implements PluginOperator {
             isInit = true;
             if (isFoundException) {
                 log.error("Plugins initialize failure");
-                return false;
             } else {
                 log.info("Plugins initialize success");
                 pluginInitializerListenerFactory.complete();
-                return true;
             }
         } catch (Exception e) {
             pluginInitializerListenerFactory.failure(e);
