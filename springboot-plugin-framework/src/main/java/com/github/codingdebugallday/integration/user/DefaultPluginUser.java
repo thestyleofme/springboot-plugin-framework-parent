@@ -36,6 +36,16 @@ public class DefaultPluginUser implements PluginUser {
     }
 
     /**
+     * 获取PluginManager
+     *
+     * @return PluginManager
+     */
+    @Override
+    public PluginManager getPluginManager() {
+        return pluginManager;
+    }
+
+    /**
      * 通过bean名称得到插件的bean。（Spring管理的bean）
      *
      * @param name 插件bean的名称。spring体系中的bean名称。可以通过注解定义，也可以自定义生成。具体可百度
@@ -144,6 +154,19 @@ public class DefaultPluginUser implements PluginUser {
     @Override
     public <T> List<T> getPluginExtensions(Class<T> tClass) {
         return pluginManager.getExtensions(tClass);
+    }
+
+    /**
+     * 得到插件扩展接口实现的bean。（非Spring管理）
+     *
+     * @param tClass   接口的类
+     * @param pluginId 插件id
+     * @param <T>      bean的类型
+     * @return 返回bean
+     */
+    @Override
+    public <T> List<T> getPluginExtensions(Class<T> tClass, String pluginId) {
+        return pluginManager.getExtensions(tClass, pluginId);
     }
 
     /**

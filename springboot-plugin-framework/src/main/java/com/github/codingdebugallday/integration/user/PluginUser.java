@@ -2,6 +2,8 @@ package com.github.codingdebugallday.integration.user;
 
 import java.util.List;
 
+import org.pf4j.PluginManager;
+
 /**
  * <p>
  * 该接口用于在主程序操作Spring管理的插件bean.
@@ -12,6 +14,13 @@ import java.util.List;
  * @since 1.0
  */
 public interface PluginUser {
+
+    /**
+     * 获取PluginManager
+     *
+     * @return PluginManager
+     */
+    PluginManager getPluginManager();
 
     /**
      * 通过bean名称得到bean。（Spring管理的bean）
@@ -119,5 +128,19 @@ public interface PluginUser {
      * @return List
      */
     <T> List<T> getPluginExtensions(Class<T> tClass);
+
+    /**
+     * 使用场景:
+     * 1. 在主程序定义接口(该接口需要继承 ExtensionPoint 接口)。
+     * 2. 插件包中实现该接口
+     * 3. 在主程序可以使用该方法获取到实现该接口的实现类。（实现类可以配合 @Extension 控制顺序）
+     * 注意: 该场景用于非Spring管理的bean, 使用Spring注解无效
+     *
+     * @param tClass   bean的类型
+     * @param pluginId 插件id
+     * @param <T>      bean的类型
+     * @return List
+     */
+    <T> List<T> getPluginExtensions(Class<T> tClass, String pluginId);
 
 }

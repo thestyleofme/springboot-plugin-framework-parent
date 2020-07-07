@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.codingdebugallday</groupId>
         <artifactId>springboot-plugin-framework-parent</artifactId>
-        <version>1.0.2.RELEASE</version>
+        <version>1.0.3.RELEASE</version>
     </parent>
 
     <artifactId>springboot-plugin-framework-example</artifactId>

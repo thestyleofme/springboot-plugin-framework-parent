@@ -12,7 +12,7 @@
 
     <groupId>com.github.codingdebugallday</groupId>
     <artifactId>integration-mybatis-runner</artifactId>
-    <version>1.0.2.RELEASE</version>
+    <version>1.0.3.RELEASE</version>
     <packaging>jar</packaging>
     <description>启动程序模块，将启动类配置到该模块下</description>
 

@@ -56,27 +56,27 @@ public class BaseConstants {
             throw new IllegalStateException("constant class");
         }
 
-        public static String DATE = "yyyy-MM-dd";
-        public static String DATETIME = "yyyy-MM-dd HH:mm:ss";
-        public static String DATETIME_MM = "yyyy-MM-dd HH:mm";
-        public static String DATETIME_SSS = "yyyy-MM-dd HH:mm:ss.SSS";
-        public static String TIME = "HH:mm";
-        public static String TIME_SS = "HH:mm:ss";
-        public static String SYS_DATE = "yyyy/MM/dd";
-        public static String SYS_DATETIME = "yyyy/MM/dd HH:mm:ss";
-        public static String SYS_DATETIME_MM = "yyyy/MM/dd HH:mm";
-        public static String SYS_DATETIME_SSS = "yyyy/MM/dd HH:mm:ss.SSS";
-        public static String NONE_DATE = "yyyyMMdd";
-        public static String NONE_DATETIME = "yyyyMMddHHmmss";
-        public static String NONE_DATETIME_MM = "yyyyMMddHHmm";
-        public static String NONE_DATETIME_SSS = "yyyyMMddHHmmssSSS";
-        public static String CST_DATETIME = "EEE MMM dd HH:mm:ss 'CST' yyyy";
-        public static String NONE_DECIMAL = "0";
-        public static String ONE_DECIMAL = "0.0";
-        public static String TWO_DECIMAL = "0.00";
-        public static String TB_NONE_DECIMAL = "#,##0";
-        public static String TB_ONE_DECIMAL = "#,##0.0";
-        public static String TB_TWO_DECIMAL = "#,##0.00";
+        public static final String DATE = "yyyy-MM-dd";
+        public static final String DATETIME = "yyyy-MM-dd HH:mm:ss";
+        public static final String DATETIME_MM = "yyyy-MM-dd HH:mm";
+        public static final String DATETIME_SSS = "yyyy-MM-dd HH:mm:ss.SSS";
+        public static final String TIME = "HH:mm";
+        public static final String TIME_SS = "HH:mm:ss";
+        public static final String SYS_DATE = "yyyy/MM/dd";
+        public static final String SYS_DATETIME = "yyyy/MM/dd HH:mm:ss";
+        public static final String SYS_DATETIME_MM = "yyyy/MM/dd HH:mm";
+        public static final String SYS_DATETIME_SSS = "yyyy/MM/dd HH:mm:ss.SSS";
+        public static final String NONE_DATE = "yyyyMMdd";
+        public static final String NONE_DATETIME = "yyyyMMddHHmmss";
+        public static final String NONE_DATETIME_MM = "yyyyMMddHHmm";
+        public static final String NONE_DATETIME_SSS = "yyyyMMddHHmmssSSS";
+        public static final String CST_DATETIME = "EEE MMM dd HH:mm:ss 'CST' yyyy";
+        public static final String NONE_DECIMAL = "0";
+        public static final String ONE_DECIMAL = "0.0";
+        public static final String TWO_DECIMAL = "0.00";
+        public static final String TB_NONE_DECIMAL = "#,##0";
+        public static final String TB_ONE_DECIMAL = "#,##0.0";
+        public static final String TB_TWO_DECIMAL = "#,##0.00";
     }
 
     public static class Suffix {
@@ -84,7 +84,7 @@ public class BaseConstants {
         private Suffix() { throw new IllegalStateException("constant class");
         }
 
-        public static String JAR = "jar";
-        public static String ZIP = "zip";
+        public static final String JAR = "jar";
+        public static final String ZIP = "zip";
     }
 }
