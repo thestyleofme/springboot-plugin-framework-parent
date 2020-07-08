@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.util.CollectionUtils;
 
 /**
  * <p>
@@ -128,6 +129,16 @@ public class DefaultPluginUser implements PluginUser {
         return beans;
     }
 
+    @Override
+    public <T> T getPluginBean(String pluginId, Class<T> aClass) {
+        List<T> pluginBeans = this.getPluginBeans(pluginId, aClass);
+        if (CollectionUtils.isEmpty(pluginBeans)) {
+            throw new PluginException(String.format("not find the [%s] bean from pluginId[%s]",
+                    aClass.getName(), pluginId));
+        }
+        return pluginBeans.get(0);
+    }
+
     @SuppressWarnings("unchecked")
     @Override
     public <T> T generateNewInstance(T object) {
@@ -167,6 +178,16 @@ public class DefaultPluginUser implements PluginUser {
     @Override
     public <T> List<T> getPluginExtensions(Class<T> tClass, String pluginId) {
         return pluginManager.getExtensions(tClass, pluginId);
+    }
+
+    @Override
+    public <T> T getPluginExtension(Class<T> tClass, String pluginId) {
+        List<T> extensions = pluginManager.getExtensions(tClass, pluginId);
+        if (CollectionUtils.isEmpty(extensions)) {
+            throw new PluginException(String.format("not find the [%s] implements class from pluginId[%s]",
+                    tClass.getName(), pluginId));
+        }
+        return extensions.get(0);
     }
 
     /**

@@ -6,7 +6,7 @@
 
     <groupId>com.github.codingdebugallday</groupId>
     <artifactId>integration-mybatisplus-plugin</artifactId>
-    <version>1.0.3.RELEASE</version>
+    <version>1.0.4-SNAPSHOT</version>
 
     <properties>
         <plugin.id>integration-mybatisplus-plugin</plugin.id>

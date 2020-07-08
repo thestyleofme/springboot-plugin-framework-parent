@@ -104,6 +104,20 @@ public interface PluginUser {
      */
     <T> List<T> getPluginBeans(String pluginId, Class<T> aClass);
 
+    /**
+     * 在主程序中定义的接口。获取指定插件中实现该接口的实现类。（Spring管理的bean）
+     * 使用场景:
+     * 1. 在主程序定义接口
+     * 2. 插件包中实现该接口, 并使用Spring的组件注解(@Component、@Service)
+     * 3. 使用该方法可以获取到指定插件中实现该接口的实现类。
+     *
+     * @param pluginId 插件id
+     * @param aClass   接口的类
+     * @param <T>      bean的类型
+     * @return 实现 aClass 接口的实现类的集合
+     */
+    <T> T getPluginBean(String pluginId, Class<T> aClass);
+
 
     /**
      * 生成一个新的Spring实例Bean.
@@ -142,5 +156,19 @@ public interface PluginUser {
      * @return List
      */
     <T> List<T> getPluginExtensions(Class<T> tClass, String pluginId);
+
+    /**
+     * 使用场景:
+     * 1. 在主程序定义接口(该接口需要继承 ExtensionPoint 接口)。
+     * 2. 插件包中实现该接口
+     * 3. 在主程序可以使用该方法获取到实现该接口的实现类。（实现类可以配合 @Extension 控制顺序）
+     * 注意: 该场景用于非Spring管理的bean, 使用Spring注解无效
+     *
+     * @param tClass   bean的类型
+     * @param pluginId 插件id
+     * @param <T>      bean的类型
+     * @return List
+     */
+    <T> T getPluginExtension(Class<T> tClass, String pluginId);
 
 }
