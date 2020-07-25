@@ -3,10 +3,7 @@ package com.github.codingdebugallday.integration.operator;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
+import java.nio.file.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -190,7 +187,7 @@ public class DefaultPluginOperator implements PluginOperator {
         // 校验插件文件
         pluginLegalVerify.verify(path);
         Path pluginsRoot = pluginManager.getPluginsRoot();
-        if (path.getParent().compareTo(pluginsRoot) == 0) {
+        if (path.getParent().endsWith(pluginsRoot)) {
             // 说明该插件文件存在于插件root目录下。直接加载该插件
             pluginId = pluginManager.loadPlugin(path);
         } else {
@@ -459,7 +456,7 @@ public class DefaultPluginOperator implements PluginOperator {
         String fileName = pluginFile.getOriginalFilename();
         assert fileName != null;
         String suffixName = fileName.substring(fileName.lastIndexOf('.') + 1);
-        //检查文件格式是否合法
+        // 检查文件格式是否合法
         if (StringUtils.isEmpty(suffixName)) {
             throw new IllegalArgumentException("Invalid file type, please select .jar or .zip file");
         }
@@ -485,10 +482,7 @@ public class DefaultPluginOperator implements PluginOperator {
                     // 存在则拷贝一份
                     backup(targetPluginPath, "upload", 2);
                 }
-                // 拷贝校验的路径到插件路径下
-                Files.copy(verifyPath, targetPluginPath, StandardCopyOption.REPLACE_EXISTING);
-                // 删除临时文件
-                Files.deleteIfExists(tempPath);
+                doCopyAndDelete(verifyPath, targetPluginPath, tempPath);
                 return targetPluginPath;
             } else {
                 Exception exception =
@@ -500,6 +494,17 @@ public class DefaultPluginOperator implements PluginOperator {
             // 出现异常, 删除刚才上传的临时文件
             verifyFailureDelete(tempPath, e);
             throw new PluginException(e);
+        }
+    }
+
+    private void doCopyAndDelete(Path verifyPath, Path targetPluginPath, Path tempPath) throws IOException {
+        try {
+            // 拷贝校验的路径到插件路径下
+            Files.copy(verifyPath, targetPluginPath, StandardCopyOption.REPLACE_EXISTING);
+            // 删除临时文件
+            Files.deleteIfExists(tempPath);
+        } catch (FileSystemException e) {
+            log.warn("{}", e.getMessage());
         }
     }
 
@@ -576,6 +581,9 @@ public class DefaultPluginOperator implements PluginOperator {
                 // 拷贝
                 Files.copy(sourcePath, target, StandardCopyOption.REPLACE_EXISTING);
             }
+            return true;
+        } catch (FileSystemException e) {
+            log.warn("Backup plugin jar '{}' failure. {}", sourcePath, e.getMessage());
             return true;
         } catch (IOException e) {
             log.error("Backup plugin jar '{}' failure. {}", sourcePath, e.getMessage(), e);
