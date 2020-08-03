@@ -127,7 +127,7 @@ public class DefaultPluginFactory implements PluginFactory {
             if (buildType == 1) {
                 registryBuild();
             } else {
-                unRegistryBuild();
+                unregisterBuild();
             }
         } finally {
             buildContainer.clear();
@@ -151,7 +151,7 @@ public class DefaultPluginFactory implements PluginFactory {
     /**
      * 卸载build
      */
-    private void unRegistryBuild() {
+    private void unregisterBuild() {
         pluginPostProcessor.unregister(buildContainer);
         for (PluginRegistryInfo pluginRegistryInfo : buildContainer) {
             pluginListenerFactory.unregister(pluginRegistryInfo.getPluginWrapper().getPluginId());

@@ -43,7 +43,7 @@ public class PluginInitializerListenerFactory implements PluginInitializerListen
     @Override
     public void complete() {
         try {
-            for (com.github.codingdebugallday.integration.listener.PluginInitializerListener pluginInitializerListener : pluginInitializerListeners) {
+            for (PluginInitializerListener pluginInitializerListener : pluginInitializerListeners) {
                 pluginInitializerListener.complete();
             }
         } catch (Exception e) {

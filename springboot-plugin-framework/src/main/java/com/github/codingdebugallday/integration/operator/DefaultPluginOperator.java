@@ -240,8 +240,13 @@ public class DefaultPluginOperator implements PluginOperator {
             }
         } catch (IOException e) {
             String error = String.format("Plugin '%s' uninstall failure: %s", pluginId, e.getMessage());
-            log.error(error);
-            throw new PluginException(error, e);
+            if (BaseConstants.OS_IS_WINDOWS) {
+                log.warn(error);
+                return false;
+            } else {
+                log.error(error);
+                throw new PluginException(error, e);
+            }
         }
     }
 

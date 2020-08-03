@@ -16,6 +16,7 @@ import java.util.jar.JarFile;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.github.codingdebugallday.constants.BaseConstants;
 import org.springframework.util.ClassUtils;
 
 /**
@@ -28,7 +29,6 @@ import org.springframework.util.ClassUtils;
  */
 public class ScanUtils {
 
-    private static final String WINDOWS_OS = "WINDOWS";
     private static final String JAVA_CLASS_SUFFIX = ".class";
 
     private ScanUtils() {
@@ -44,8 +44,7 @@ public class ScanUtils {
      * @throws IOException 扫描异常
      */
     public static Set<String> scanClassPackageName(String basePackage, Class<?> baseClass) throws IOException {
-        String osName = System.getProperty("os.name");
-        if (osName.toUpperCase().startsWith(WINDOWS_OS)) {
+        if (BaseConstants.OS_IS_WINDOWS) {
             // windows
             return scanClassPackageNameOfWindows(basePackage, baseClass);
         } else {

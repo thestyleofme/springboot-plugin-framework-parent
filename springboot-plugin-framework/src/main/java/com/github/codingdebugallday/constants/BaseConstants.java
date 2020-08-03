@@ -10,14 +10,15 @@ package com.github.codingdebugallday.constants;
  */
 public class BaseConstants {
 
+    public static final boolean OS_IS_WINDOWS = System.getProperty("os.name").toLowerCase().startsWith("win");
     private BaseConstants() {
-        throw new IllegalStateException("constant class");
+        throw new IllegalStateException();
     }
 
     public static class Symbol {
 
         private Symbol() {
-            throw new IllegalStateException("constant class");
+            throw new IllegalStateException();
         }
 
         public static final String SIGH = "!";
@@ -53,7 +54,7 @@ public class BaseConstants {
     public static class Pattern {
 
         private Pattern() {
-            throw new IllegalStateException("constant class");
+            throw new IllegalStateException();
         }
 
         public static final String DATE = "yyyy-MM-dd";
@@ -81,7 +82,7 @@ public class BaseConstants {
 
     public static class Suffix {
 
-        private Suffix() { throw new IllegalStateException("constant class");
+        private Suffix() { throw new IllegalStateException();
         }
 
         public static final String JAR = "jar";
