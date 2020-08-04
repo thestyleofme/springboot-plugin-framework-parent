@@ -6,7 +6,7 @@
 
     <groupId>com.github.codingdebugallday</groupId>
     <artifactId>springboot-plugin-framework-extension-resources</artifactId>
-    <version>1.0.4.RELEASE</version>
+    <version>1.0.5.RELEASE</version>
 
     <name>springboot-plugin-framework-extension-resources</name>
     <description>插件扩展-通过url读取插件中的静态资源</description>
@@ -50,7 +50,7 @@
         <spring-version>5.2.7.RELEASE</spring-version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
 
-        <springboot-plugin-framework.version>1.0.4.RELEASE</springboot-plugin-framework.version>
+        <springboot-plugin-framework.version>1.0.5.RELEASE</springboot-plugin-framework.version>
         <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
     </properties>
 

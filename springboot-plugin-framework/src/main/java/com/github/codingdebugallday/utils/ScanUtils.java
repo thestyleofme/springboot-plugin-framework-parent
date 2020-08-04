@@ -148,22 +148,27 @@ public class ScanUtils {
             if (connection == null) {
                 return classPackageNames;
             }
+            connection.setUseCaches(false);
             JarFile jarFile = connection.getJarFile();
             if (jarFile == null) {
                 return classPackageNames;
             }
             Enumeration<JarEntry> jarEntryEnumeration = jarFile.entries();
             // 迭代
-            while (jarEntryEnumeration.hasMoreElements()) {
-                JarEntry entry = jarEntryEnumeration.nextElement();
-                String jarEntryName = entry.getName();
-                if (jarEntryName.contains(JAVA_CLASS_SUFFIX) &&
-                        jarEntryName.replace("/", ".").startsWith(basePackage)) {
-                    String className = jarEntryName
-                            .substring(0, jarEntryName.lastIndexOf('.'))
-                            .replace("/", ".");
-                    classPackageNames.add(className);
+            try {
+                while (jarEntryEnumeration.hasMoreElements()) {
+                    JarEntry entry = jarEntryEnumeration.nextElement();
+                    String jarEntryName = entry.getName();
+                    if (jarEntryName.contains(JAVA_CLASS_SUFFIX) &&
+                            jarEntryName.replace("/", ".").startsWith(basePackage)) {
+                        String className = jarEntryName
+                                .substring(0, jarEntryName.lastIndexOf('.'))
+                                .replace("/", ".");
+                        classPackageNames.add(className);
+                    }
                 }
+            } finally {
+                jarFile.close();
             }
         }
         return classPackageNames;
