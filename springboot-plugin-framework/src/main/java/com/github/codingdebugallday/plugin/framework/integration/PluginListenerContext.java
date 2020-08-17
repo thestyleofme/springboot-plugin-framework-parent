@@ -1,0 +1,42 @@
+package com.github.codingdebugallday.plugin.framework.integration;
+
+import java.util.List;
+
+import com.github.codingdebugallday.plugin.framework.integration.listener.PluginListener;
+
+/**
+ * <p>
+ * 插件bean监听者上下文
+ * 注意: 监听者必须在初始化插件前添加，否则在初始化阶段可能无法触发添加的监听者。
+ * </p>
+ *
+ * @author isaac 2020/6/16 10:14
+ * @since 1.0
+ */
+public interface PluginListenerContext {
+
+    /**
+     * 添加监听者
+     *
+     * @param pluginListener 插件 bean 监听者
+     */
+    void addListener(PluginListener pluginListener);
+
+
+    /**
+     * 添加监听者
+     *
+     * @param pluginListenerClass 插件监听者Class类
+     * @param <T>                 继承PluginListener的子类
+     */
+    <T extends PluginListener> void addListener(Class<T> pluginListenerClass);
+
+    /**
+     * 追加多个监听者
+     *
+     * @param pluginListeners 插件 bean 监听者集合
+     */
+    void addListener(List<PluginListener> pluginListeners);
+
+
+}

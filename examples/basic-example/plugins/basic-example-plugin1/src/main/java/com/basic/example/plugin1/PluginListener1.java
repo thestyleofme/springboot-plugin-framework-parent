@@ -1,9 +1,9 @@
 package com.basic.example.plugin1;
 
 import com.basic.example.plugin1.service.HelloService;
-import com.github.codingdebugallday.realize.BasePlugin;
-import com.github.codingdebugallday.realize.OneselfListener;
-import com.github.codingdebugallday.utils.OrderPriority;
+import com.github.codingdebugallday.plugin.framework.realize.BasePlugin;
+import com.github.codingdebugallday.plugin.framework.realize.OneselfListener;
+import com.github.codingdebugallday.plugin.framework.utils.OrderPriority;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

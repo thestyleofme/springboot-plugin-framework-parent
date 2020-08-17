@@ -1,6 +1,6 @@
 package com.mybatisplus.main.config;
 
-import com.github.codingdebugallday.integration.AbstractIntegrationConfiguration;
+import com.github.codingdebugallday.plugin.framework.integration.AbstractIntegrationConfiguration;
 import org.pf4j.RuntimeMode;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;

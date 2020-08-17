@@ -4,7 +4,7 @@ package com.basic.example.plugin2.config;
 import java.util.List;
 import java.util.Set;
 
-import com.github.codingdebugallday.annotation.ConfigDefinition;
+import com.github.codingdebugallday.plugin.framework.annotation.ConfigDefinition;
 
 /**
  * <p>

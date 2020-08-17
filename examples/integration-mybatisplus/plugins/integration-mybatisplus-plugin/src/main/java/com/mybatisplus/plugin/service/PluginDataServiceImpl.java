@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.github.codingdebugallday.extension.mybatis.support.mybatisplus.WrapperServiceImpl;
+import com.github.codingdebugallday.plugin.framework.extension.mybatis.support.mybatisplus.WrapperServiceImpl;
 import com.mybatisplus.plugin.entity.PluginData;
 import com.mybatisplus.plugin.mapper.PluginDataMapper;
 import org.springframework.stereotype.Component;

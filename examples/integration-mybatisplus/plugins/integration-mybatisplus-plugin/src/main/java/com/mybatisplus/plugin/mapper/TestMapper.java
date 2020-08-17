@@ -1,7 +1,7 @@
 package com.mybatisplus.plugin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.github.codingdebugallday.extension.mybatis.annotation.PluginMapper;
+import com.github.codingdebugallday.plugin.framework.extension.mybatis.annotation.PluginMapper;
 import com.mybatisplus.plugin.entity.Test;
 
 /**

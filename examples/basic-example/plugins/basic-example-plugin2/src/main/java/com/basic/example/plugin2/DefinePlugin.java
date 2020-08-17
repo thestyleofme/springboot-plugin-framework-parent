@@ -1,6 +1,6 @@
 package com.basic.example.plugin2;
 
-import com.github.codingdebugallday.realize.BasePlugin;
+import com.github.codingdebugallday.plugin.framework.realize.BasePlugin;
 import org.pf4j.PluginWrapper;
 
 /**

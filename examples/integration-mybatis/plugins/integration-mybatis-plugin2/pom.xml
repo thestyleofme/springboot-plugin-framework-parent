@@ -6,7 +6,7 @@
     <parent>
         <artifactId>integration-mybatis-plugin-parent</artifactId>
         <groupId>com.github.codingdebugallday</groupId>
-        <version>1.0.5.RELEASE</version>
+        <version>1.0.6.RELEASE</version>
     </parent>
 
     <artifactId>integration-mybatis-plugin2</artifactId>

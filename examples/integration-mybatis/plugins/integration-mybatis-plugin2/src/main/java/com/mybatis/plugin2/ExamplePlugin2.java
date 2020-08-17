@@ -3,9 +3,9 @@ package com.mybatis.plugin2;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.github.codingdebugallday.extension.mybatis.configuration.SpringBootMybatisConfig;
-import com.github.codingdebugallday.extension.resources.StaticResourceConfig;
-import com.github.codingdebugallday.realize.BasePlugin;
+import com.github.codingdebugallday.plugin.framework.extension.mybatis.configuration.SpringBootMybatisConfig;
+import com.github.codingdebugallday.plugin.framework.extension.resources.StaticResourceConfig;
+import com.github.codingdebugallday.plugin.framework.realize.BasePlugin;
 import org.pf4j.PluginWrapper;
 
 /**

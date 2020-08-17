@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.*;
 
-import com.github.codingdebugallday.integration.application.PluginApplication;
-import com.github.codingdebugallday.integration.listener.PluginListener;
+import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
+import com.github.codingdebugallday.plugin.framework.integration.listener.PluginListener;
 import org.quartz.*;
 /**
  * <p>

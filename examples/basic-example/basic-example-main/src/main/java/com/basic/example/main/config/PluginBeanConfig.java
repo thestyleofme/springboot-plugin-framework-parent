@@ -1,7 +1,7 @@
 package com.basic.example.main.config;
 
-import com.github.codingdebugallday.integration.application.AutoPluginApplication;
-import com.github.codingdebugallday.integration.application.PluginApplication;
+import com.github.codingdebugallday.plugin.framework.integration.application.AutoPluginApplication;
+import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
 import org.quartz.SchedulerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

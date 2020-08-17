@@ -1,18 +1,19 @@
 package com.mybatis.main.config;
 
-import com.github.codingdebugallday.extension.mybatis.SpringBootMybatisExtension;
-import com.github.codingdebugallday.extension.resources.StaticResourceExtension;
-import com.github.codingdebugallday.integration.*;
-import com.github.codingdebugallday.integration.application.AutoPluginApplication;
-import com.github.codingdebugallday.integration.application.PluginApplication;
+import java.util.concurrent.TimeUnit;
+
+import com.github.codingdebugallday.plugin.framework.extension.mybatis.SpringBootMybatisExtension;
+import com.github.codingdebugallday.plugin.framework.extension.resources.StaticResourceExtension;
+import com.github.codingdebugallday.plugin.framework.integration.ConfigurationBuilder;
+import com.github.codingdebugallday.plugin.framework.integration.IntegrationConfiguration;
+import com.github.codingdebugallday.plugin.framework.integration.application.AutoPluginApplication;
+import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
 import org.pf4j.RuntimeMode;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.CacheControl;
 import org.springframework.stereotype.Component;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * <p>

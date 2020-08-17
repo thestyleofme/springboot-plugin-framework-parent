@@ -5,9 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-import com.github.codingdebugallday.integration.application.PluginApplication;
-import com.github.codingdebugallday.integration.operator.PluginOperator;
-import com.github.codingdebugallday.integration.operator.module.PluginInfo;
+import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
+import com.github.codingdebugallday.plugin.framework.integration.operator.PluginOperator;
+import com.github.codingdebugallday.plugin.framework.integration.operator.module.PluginInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,6 @@
 package com.basic.example.main.config;
 
-import com.github.codingdebugallday.integration.listener.PluginInitializerListener;
+import com.github.codingdebugallday.plugin.framework.integration.listener.PluginInitializerListener;
 import org.springframework.stereotype.Component;
 
 /**

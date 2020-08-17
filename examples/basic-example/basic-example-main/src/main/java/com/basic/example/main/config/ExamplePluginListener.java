@@ -1,8 +1,8 @@
 package com.basic.example.main.config;
 
-import com.github.codingdebugallday.integration.application.PluginApplication;
-import com.github.codingdebugallday.integration.listener.PluginListener;
-import com.github.codingdebugallday.integration.user.PluginUser;
+import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
+import com.github.codingdebugallday.plugin.framework.integration.listener.PluginListener;
+import com.github.codingdebugallday.plugin.framework.integration.user.PluginUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
