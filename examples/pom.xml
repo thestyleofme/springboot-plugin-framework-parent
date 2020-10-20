@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.github.codingdebugallday</groupId>
+        <groupId>com.github.thestyleofme</groupId>
         <artifactId>springboot-plugin-framework-parent</artifactId>
-        <version>1.0.6.RELEASE</version>
+        <version>1.0.7.RELEASE</version>
     </parent>
 
     <artifactId>springboot-plugin-framework-example</artifactId>

@@ -1,8 +1,8 @@
 package com.mybatisplus.main.config;
 
-import com.github.codingdebugallday.plugin.framework.extension.mybatis.SpringBootMybatisExtension;
-import com.github.codingdebugallday.plugin.framework.integration.application.AutoPluginApplication;
-import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
+import com.github.thestyleofme.plugin.framework.extension.mybatis.SpringBootMybatisExtension;
+import com.github.thestyleofme.plugin.framework.integration.application.AutoPluginApplication;
+import com.github.thestyleofme.plugin.framework.integration.application.PluginApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

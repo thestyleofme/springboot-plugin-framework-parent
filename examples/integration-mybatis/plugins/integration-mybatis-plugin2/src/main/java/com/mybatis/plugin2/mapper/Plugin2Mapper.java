@@ -2,7 +2,7 @@ package com.mybatis.plugin2.mapper;
 
 import java.util.List;
 
-import com.github.codingdebugallday.plugin.framework.extension.mybatis.annotation.PluginMapper;
+import com.github.thestyleofme.plugin.framework.extension.mybatis.annotation.PluginMapper;
 import com.mybatis.plugin2.entity.Plugin2;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;

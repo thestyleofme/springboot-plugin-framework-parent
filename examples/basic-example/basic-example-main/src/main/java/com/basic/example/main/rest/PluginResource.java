@@ -4,9 +4,9 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Set;
 
-import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
-import com.github.codingdebugallday.plugin.framework.integration.operator.PluginOperator;
-import com.github.codingdebugallday.plugin.framework.integration.operator.module.PluginInfo;
+import com.github.thestyleofme.plugin.framework.integration.application.PluginApplication;
+import com.github.thestyleofme.plugin.framework.integration.operator.PluginOperator;
+import com.github.thestyleofme.plugin.framework.integration.operator.module.PluginInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

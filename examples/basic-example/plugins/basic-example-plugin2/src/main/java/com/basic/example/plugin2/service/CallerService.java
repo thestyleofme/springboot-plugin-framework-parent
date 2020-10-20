@@ -2,7 +2,7 @@ package com.basic.example.plugin2.service;
 
 import com.basic.example.main.invokeapi.CommonParam;
 import com.basic.example.main.invokeapi.CommonReturn;
-import com.github.codingdebugallday.plugin.framework.annotation.Caller;
+import com.github.thestyleofme.plugin.framework.annotation.Caller;
 
 /**
  * <p>

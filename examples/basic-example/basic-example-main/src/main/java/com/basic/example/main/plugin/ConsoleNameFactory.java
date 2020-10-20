@@ -1,7 +1,7 @@
 package com.basic.example.main.plugin;
 
-import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
-import com.github.codingdebugallday.plugin.framework.integration.refresh.AbstractPluginSpringBeanRefresh;
+import com.github.thestyleofme.plugin.framework.integration.application.PluginApplication;
+import com.github.thestyleofme.plugin.framework.integration.refresh.AbstractPluginSpringBeanRefresh;
 import org.springframework.stereotype.Component;
 
 /**

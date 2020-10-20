@@ -10,8 +10,8 @@
     </modules>
     <parent>
         <artifactId>integration-mybatis</artifactId>
-        <groupId>com.github.codingdebugallday</groupId>
-        <version>1.0.6.RELEASE</version>
+        <groupId>com.github.thestyleofme</groupId>
+        <version>1.0.7.RELEASE</version>
     </parent>
 
     <artifactId>integration-mybatis-plugin-parent</artifactId>
@@ -34,7 +34,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.github.codingdebugallday</groupId>
+            <groupId>com.github.thestyleofme</groupId>
             <artifactId>integration-mybatis-main</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>

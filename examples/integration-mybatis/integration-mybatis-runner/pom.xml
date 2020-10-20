@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.github.codingdebugallday</groupId>
+    <groupId>com.github.thestyleofme</groupId>
     <artifactId>integration-mybatis-runner</artifactId>
-    <version>1.0.6.RELEASE</version>
+    <version>1.0.7.RELEASE</version>
     <packaging>jar</packaging>
     <description>启动程序模块，将启动类配置到该模块下</description>
 
@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.codingdebugallday</groupId>
+            <groupId>com.github.thestyleofme</groupId>
             <artifactId>integration-mybatis-main</artifactId>
             <version>${project.version}</version>
         </dependency>

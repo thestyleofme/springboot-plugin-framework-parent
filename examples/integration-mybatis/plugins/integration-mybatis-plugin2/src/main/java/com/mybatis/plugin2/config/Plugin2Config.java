@@ -1,6 +1,6 @@
 package com.mybatis.plugin2.config;
 
-import com.github.codingdebugallday.plugin.framework.annotation.ConfigDefinition;
+import com.github.thestyleofme.plugin.framework.annotation.ConfigDefinition;
 
 /**
  * <p>

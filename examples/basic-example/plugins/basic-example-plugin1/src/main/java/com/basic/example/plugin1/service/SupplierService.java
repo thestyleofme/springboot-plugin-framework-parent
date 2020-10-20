@@ -3,7 +3,7 @@ package com.basic.example.plugin1.service;
 import com.basic.example.main.invokeapi.CommonParam;
 import com.basic.example.main.invokeapi.CommonReturn;
 import com.basic.example.plugin1.config.PluginConfig1;
-import com.github.codingdebugallday.plugin.framework.annotation.Supplier;
+import com.github.thestyleofme.plugin.framework.annotation.Supplier;
 
 /**
  * <p>

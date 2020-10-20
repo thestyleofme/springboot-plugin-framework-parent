@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.codingdebugallday</groupId>
+    <groupId>com.github.thestyleofme</groupId>
     <artifactId>springboot-plugin-framework-extension</artifactId>
-    <version>1.0.6.RELEASE</version>
+    <version>1.0.7.RELEASE</version>
     <packaging>pom</packaging>
 
     <name>springboot-plugin-framework-extension</name>
     <description>spring boot 插件式开发集成包--扩展模块</description>
-    <url>https://github.com/codingdebugallday/springboot-plugin-framework-parent.git</url>
+    <url>https://github.com/thestyleofme/springboot-plugin-framework-parent.git</url>
 
     <modules>
         <module>springboot-plugin-framework-extension-mybatis</module>

@@ -3,8 +3,8 @@ package com.mybatisplus.plugin;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.github.codingdebugallday.plugin.framework.extension.mybatis.configuration.SpringBootMybatisConfig;
-import com.github.codingdebugallday.plugin.framework.realize.BasePlugin;
+import com.github.thestyleofme.plugin.framework.extension.mybatis.configuration.SpringBootMybatisConfig;
+import com.github.thestyleofme.plugin.framework.realize.BasePlugin;
 import org.pf4j.PluginWrapper;
 
 /**

@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.codingdebugallday</groupId>
+    <groupId>com.github.thestyleofme</groupId>
     <artifactId>springboot-plugin-framework-extension-mybatis</artifactId>
-    <version>1.0.6.RELEASE</version>
+    <version>1.0.7.RELEASE</version>
 
     <name>springboot-plugin-framework-extension-mybatis</name>
     <description>spring boot 插件式开发集成扩展 mybatis</description>
-    <url>https://github.com/codingdebugallday/springboot-plugin-framework-parent.git</url>
+    <url>https://github.com/thestyleofme/springboot-plugin-framework-parent.git</url>
 
     <licenses>
         <license>
@@ -21,9 +21,10 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/codingdebugallday/springboot-plugin-framework-parent</url>
-        <connection>https://github.com/codingdebugallday/springboot-plugin-framework-parent.git</connection>
-        <developerConnection>https://github.com/codingdebugallday/springboot-plugin-framework-parent.git</developerConnection>
+        <url>https://github.com/thestyleofme/springboot-plugin-framework-parent</url>
+        <connection>https://github.com/thestyleofme/springboot-plugin-framework-parent.git</connection>
+        <developerConnection>https://github.com/thestyleofme/springboot-plugin-framework-parent.git
+        </developerConnection>
     </scm>
 
     <developers>
@@ -47,14 +48,14 @@
         <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 
-        <springboot-plugin-framework.version>1.0.6.RELEASE</springboot-plugin-framework.version>
+        <springboot-plugin-framework.version>1.0.7.RELEASE</springboot-plugin-framework.version>
         <mybatis-spring-boot-starter.version>2.1.3</mybatis-spring-boot-starter.version>
         <mybatis-plus-boot-starter.version>3.3.2</mybatis-plus-boot-starter.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.github.codingdebugallday</groupId>
+            <groupId>com.github.thestyleofme</groupId>
             <artifactId>springboot-plugin-framework</artifactId>
             <version>${springboot-plugin-framework.version}</version>
             <scope>provided</scope>

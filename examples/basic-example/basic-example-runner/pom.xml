@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>basic-example</artifactId>
-        <groupId>com.github.codingdebugallday</groupId>
-        <version>1.0.6.RELEASE</version>
+        <groupId>com.github.thestyleofme</groupId>
+        <version>1.0.7.RELEASE</version>
     </parent>
 
     <artifactId>basic-example-runner</artifactId>
@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.codingdebugallday</groupId>
+            <groupId>com.github.thestyleofme</groupId>
             <artifactId>basic-example-main</artifactId>
             <version>${project.version}</version>
         </dependency>

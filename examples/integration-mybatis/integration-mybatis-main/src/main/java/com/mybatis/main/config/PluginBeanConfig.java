@@ -2,12 +2,12 @@ package com.mybatis.main.config;
 
 import java.util.concurrent.TimeUnit;
 
-import com.github.codingdebugallday.plugin.framework.extension.mybatis.SpringBootMybatisExtension;
-import com.github.codingdebugallday.plugin.framework.extension.resources.StaticResourceExtension;
-import com.github.codingdebugallday.plugin.framework.integration.ConfigurationBuilder;
-import com.github.codingdebugallday.plugin.framework.integration.IntegrationConfiguration;
-import com.github.codingdebugallday.plugin.framework.integration.application.AutoPluginApplication;
-import com.github.codingdebugallday.plugin.framework.integration.application.PluginApplication;
+import com.github.thestyleofme.plugin.framework.extension.mybatis.SpringBootMybatisExtension;
+import com.github.thestyleofme.plugin.framework.extension.resources.StaticResourceExtension;
+import com.github.thestyleofme.plugin.framework.integration.ConfigurationBuilder;
+import com.github.thestyleofme.plugin.framework.integration.IntegrationConfiguration;
+import com.github.thestyleofme.plugin.framework.integration.application.AutoPluginApplication;
+import com.github.thestyleofme.plugin.framework.integration.application.PluginApplication;
 import org.pf4j.RuntimeMode;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;

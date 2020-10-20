@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.codingdebugallday</groupId>
+    <groupId>com.github.thestyleofme</groupId>
     <artifactId>springboot-plugin-framework</artifactId>
-    <version>1.0.6.RELEASE</version>
+    <version>1.0.7.RELEASE</version>
 
     <name>springboot-plugin-framework</name>
     <description>spring boot 插件式开发集成包</description>
-    <url>https://github.com/codingdebugallday/springboot-plugin-framework-parent.git</url>
+    <url>https://github.com/thestyleofme/springboot-plugin-framework-parent.git</url>
 
     <licenses>
         <license>
@@ -21,14 +21,15 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/codingdebugallday/springboot-plugin-framework-parent</url>
-        <connection>https://github.com/codingdebugallday/springboot-plugin-framework-parent.git</connection>
-        <developerConnection>https://github.com/codingdebugallday/springboot-plugin-framework-parent.git</developerConnection>
+        <url>https://github.com/thestyleofme/springboot-plugin-framework-parent</url>
+        <connection>https://github.com/thestyleofme/springboot-plugin-framework-parent.git</connection>
+        <developerConnection>https://github.com/thestyleofme/springboot-plugin-framework-parent.git
+        </developerConnection>
     </scm>
 
     <developers>
         <developer>
-            <name>abigballofmud</name>
+            <name>thestyleofme</name>
             <email>codingdebugallday@163.com</email>
             <roles>
                 <role>Developer</role>
@@ -47,7 +48,7 @@
         <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 
-        <pf4j-version>3.4.0</pf4j-version>
+        <pf4j-version>3.4.1</pf4j-version>
         <jackson.version>2.10.1</jackson.version>
 
         <spring-version>5.2.7.RELEASE</spring-version>

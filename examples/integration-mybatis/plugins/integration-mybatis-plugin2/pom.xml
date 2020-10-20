@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>integration-mybatis-plugin-parent</artifactId>
-        <groupId>com.github.codingdebugallday</groupId>
-        <version>1.0.6.RELEASE</version>
+        <groupId>com.github.thestyleofme</groupId>
+        <version>1.0.7.RELEASE</version>
     </parent>
 
     <artifactId>integration-mybatis-plugin2</artifactId>

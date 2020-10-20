@@ -3,7 +3,7 @@ package com.mybatisplus.plugin.mapper;
 import java.util.List;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.github.codingdebugallday.plugin.framework.extension.mybatis.annotation.PluginMapper;
+import com.github.thestyleofme.plugin.framework.extension.mybatis.annotation.PluginMapper;
 import com.mybatisplus.plugin.entity.PluginData;
 
 /**

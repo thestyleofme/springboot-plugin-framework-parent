@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>springboot-plugin-framework-example</artifactId>
-        <groupId>com.github.codingdebugallday</groupId>
-        <version>1.0.6.RELEASE</version>
+        <groupId>com.github.thestyleofme</groupId>
+        <version>1.0.7.RELEASE</version>
     </parent>
 
     <description>集成mybatis-plus案例</description>

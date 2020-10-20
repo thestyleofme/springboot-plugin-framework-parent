@@ -1,8 +1,8 @@
 package com.mybatis.plugin2;
 
-import com.github.codingdebugallday.plugin.framework.realize.BasePlugin;
-import com.github.codingdebugallday.plugin.framework.realize.OneselfListener;
-import com.github.codingdebugallday.plugin.framework.utils.OrderPriority;
+import com.github.thestyleofme.plugin.framework.realize.BasePlugin;
+import com.github.thestyleofme.plugin.framework.realize.OneselfListener;
+import com.github.thestyleofme.plugin.framework.utils.OrderPriority;
 import com.mybatis.main.mapper.RoleMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.github.codingdebugallday</groupId>
+    <groupId>com.github.thestyleofme</groupId>
     <artifactId>integration-mybatisplus-main</artifactId>
-    <version>1.0.6.RELEASE</version>
+    <version>1.0.7.RELEASE</version>
     <description>集成mybatis-plus 案例--主程序</description>
 
     <properties>
@@ -20,8 +20,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <springboot-plugin-framework.version>1.0.6.RELEASE</springboot-plugin-framework.version>
-        <extension-mybatis.version>1.0.6.RELEASE</extension-mybatis.version>
+        <springboot-plugin-framework.version>1.0.7.RELEASE</springboot-plugin-framework.version>
+        <extension-mybatis.version>1.0.7.RELEASE</extension-mybatis.version>
 
         <mybatis-spring-boot-starter.version>2.1.3</mybatis-spring-boot-starter.version>
         <mybatis-plus-boot-starter.version>3.3.2</mybatis-plus-boot-starter.version>
@@ -32,12 +32,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.codingdebugallday</groupId>
+            <groupId>com.github.thestyleofme</groupId>
             <artifactId>springboot-plugin-framework</artifactId>
             <version>${springboot-plugin-framework.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.github.codingdebugallday</groupId>
+            <groupId>com.github.thestyleofme</groupId>
             <artifactId>springboot-plugin-framework-extension-mybatis</artifactId>
             <version>${extension-mybatis.version}</version>
         </dependency>
