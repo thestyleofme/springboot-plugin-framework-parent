@@ -1,10 +1,12 @@
 package com.github.thestyleofme.plugin.framework.integration.user;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 import com.github.thestyleofme.plugin.framework.exceptions.PluginException;
 import com.github.thestyleofme.plugin.framework.factory.PluginInfoContainer;
-import com.github.thestyleofme.plugin.framework.factory.process.pipe.bean.BasicBeanProcessor;
 import org.pf4j.PluginManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -127,22 +129,10 @@ public class DefaultPluginUser implements PluginUser {
         return beans;
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public <T> T getPluginBean(String pluginId, Class<T> aClass) {
         List<T> pluginBeans = this.getPluginBeans(pluginId, aClass);
         if (CollectionUtils.isEmpty(pluginBeans)) {
-            Map<String, List<String>> beanMap = BasicBeanProcessor.BEAN_MAP;
-            Map<String, Object> pluginBean = BasicBeanProcessor.PLUGIN_BEAN_MAP;
-            if (beanMap.containsKey(pluginId)) {
-                List<String> names = beanMap.get(pluginId);
-                for (String n : names) {
-                    Object bean = pluginBean.get(n);
-                    if (Arrays.asList(bean.getClass().getInterfaces()).contains(aClass)) {
-                        return (T) bean;
-                    }
-                }
-            }
             throw new PluginException(String.format("not find the [%s] bean from pluginId[%s]",
                     aClass.getName(), pluginId));
         }

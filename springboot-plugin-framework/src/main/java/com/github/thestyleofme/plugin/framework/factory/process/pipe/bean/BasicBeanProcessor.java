@@ -1,7 +1,9 @@
 package com.github.thestyleofme.plugin.framework.factory.process.pipe.bean;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.github.thestyleofme.plugin.framework.factory.PluginRegistryInfo;
@@ -31,10 +33,6 @@ public class BasicBeanProcessor implements PluginPipeProcessor {
 
     private static final String KEY = "BasicBeanProcessor";
 
-    public static final Map<String, List<String>> BEAN_MAP = new ConcurrentHashMap<>();
-    public static final Map<String, Object> PLUGIN_BEAN_MAP = new ConcurrentHashMap<>();
-    private final ApplicationContext applicationContext;
-
     private static final String AOP_BEAN_NAME_INC_NUM = "AOP_BEAN_NAME_INC_NUM";
 
     private final SpringBeanRegister springBeanRegister;
@@ -42,7 +40,6 @@ public class BasicBeanProcessor implements PluginPipeProcessor {
 
     public BasicBeanProcessor(ApplicationContext applicationContext) {
         Objects.requireNonNull(applicationContext);
-        this.applicationContext = applicationContext;
         this.springBeanRegister = new SpringBeanRegister(applicationContext);
         this.helper = new BeanFactoryAdvisorRetrievalHelper(
                 (ConfigurableListableBeanFactory) applicationContext.getAutowireCapableBeanFactory());
@@ -102,17 +99,6 @@ public class BasicBeanProcessor implements PluginPipeProcessor {
             }
             String namePrefix = resolveAopClass(pluginId, aClass);
             String beanName = springBeanRegister.register(pluginId, namePrefix, aClass);
-            List<String> tmp = new ArrayList<>();
-            if (BEAN_MAP.containsKey(pluginId)) {
-                tmp = BEAN_MAP.get(pluginId);
-                if (!tmp.contains(beanName)) {
-                    tmp.add(beanName);
-                }
-            } else {
-                tmp.add(beanName);
-            }
-            PLUGIN_BEAN_MAP.put(beanName, this.applicationContext.getBean(beanName));
-            BEAN_MAP.put(pluginId, tmp);
             beanNames.add(beanName);
         }
     }
