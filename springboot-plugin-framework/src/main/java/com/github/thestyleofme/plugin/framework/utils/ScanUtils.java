@@ -18,6 +18,7 @@ import java.util.stream.Stream;
 
 import com.github.thestyleofme.plugin.framework.constants.BaseConstants;
 import org.springframework.util.ClassUtils;
+import sun.net.www.protocol.jar.Handler;
 
 /**
  * <p>
@@ -143,10 +144,8 @@ public class ScanUtils {
                 // 不是jar协议
                 return classPackageNames;
             }
-            JarURLConnection connection = (JarURLConnection) url.openConnection();
-            if (connection == null) {
-                return classPackageNames;
-            }
+            JarURLConnection connection =
+                    new sun.net.www.protocol.jar.JarURLConnection(url, new Handler());
             connection.setUseCaches(false);
             JarFile jarFile = connection.getJarFile();
             if (jarFile == null) {
