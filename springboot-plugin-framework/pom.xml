@@ -49,7 +49,7 @@
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 
         <pf4j-version>3.4.1</pf4j-version>
-        <jackson.version>2.10.1</jackson.version>
+        <jackson.version>2.12.1</jackson.version>
 
         <spring-version>5.2.7.RELEASE</spring-version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
