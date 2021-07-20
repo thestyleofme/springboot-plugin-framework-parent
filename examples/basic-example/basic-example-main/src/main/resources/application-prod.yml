@@ -3,5 +3,5 @@ server:
 
 plugin:
   runMode: prod
-  pluginPath: examples/basic-example/demo-dist/plugins
-  pluginConfigFilePath: examples/basic-example/demo-dist/pluginConfig
+  pluginPath: plugins
+  pluginConfigFilePath: pluginConfig

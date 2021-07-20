@@ -6,3 +6,15 @@
 
 - 数据中台统一数据源操作 https://github.com/thestyleofme/plugin-driver-parent.git
 
+
+### 运行demo
+
+- 进入demo根目录
+
+    ```
+    basic-example
+    ```
+- 根据系统执行对应编译和运行脚本
+
+    - [windows script](examples/basic-example/package.bat)
+    - [linux script](examples/basic-example/package.sh)
