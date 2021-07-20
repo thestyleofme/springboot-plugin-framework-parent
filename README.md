@@ -12,7 +12,7 @@
 - 进入demo根目录
 
     ```
-    basic-example
+    cd examples/basic-example/
     ```
 - 根据系统执行对应编译和运行脚本
 
