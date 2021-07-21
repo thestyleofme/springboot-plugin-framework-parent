@@ -1,5 +1,7 @@
 ## springboot-plugin-framework-parent
 
+原作者项目地址 https://github.com/starblues-zhuo/springboot-plugin-framework-parent
+
 基于插件架构的spring boot starter
 
 ### 应用项目 
