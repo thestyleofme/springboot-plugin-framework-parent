@@ -53,7 +53,7 @@
 
         <spring-version>5.2.7.RELEASE</spring-version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
