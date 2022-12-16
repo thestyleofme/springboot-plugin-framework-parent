@@ -48,7 +48,7 @@
         <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 
-        <spring-version>5.2.7.RELEASE</spring-version>
+        <spring-version>5.2.20.RELEASE</spring-version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
 
         <springboot-plugin-framework.version>1.0.7.RELEASE</springboot-plugin-framework.version>
